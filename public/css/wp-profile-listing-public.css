@@ -1,0 +1,259 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+/* Add this to your stylesheet or in the head of your HTML document */
+.pagination {
+    margin-top: 20px;
+}
+
+.page-link {
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.page-link:hover {
+    background-color: #f5f5f5;
+}
+
+.main_wrapper {
+    padding: 50px;
+    border: 2px solid #000;
+    margin: 80px 80px 40px 80px;
+    background: #fff;
+}
+
+#search-button {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background: #6d6d6d;
+
+}
+
+@font-face {
+    font-family: "dashicons";
+    src: url("../fonts/dashicons.eot");
+}
+
+@font-face {
+    font-family: "dashicons";
+    src: url(data:application/x-font-woff;charset=utf-8;base64,/* !! Large amount of data removed, see wp-includes/css/dashicons.css for complete data !! */) format("woff"),
+        url("../fonts/dashicons.ttf") format("truetype"),
+        url("../fonts/dashicons.svg#dashicons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.star-rating .star-full:before {
+    content: "\f155";
+}
+
+.star-rating .star-half:before {
+    content: "\f459";
+}
+
+.star-rating .star-empty:before {
+    content: "\f154";
+}
+
+.star-rating .star {
+    color: #525659;
+    display: inline-block;
+    font-family: dashicons;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    height: 20px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: inherit;
+    vertical-align: top;
+    width: 20px;
+}
+
+#custom-profile-listing>.star-rating {
+    display: none;
+}
+
+/* Style for the Select2 container */
+body .select2-container {
+    width: 50% !important;
+    /* Set the width of the container */
+}
+
+/* Style for each Select2 element */
+body .select2-container .select2-selection--multiple {
+    display: flex;
+    /* Make it a flex container */
+    flex-wrap: wrap;
+    /* Wrap items to the next line when needed */
+    gap: 10px;
+    /* Set the gap between Select2 elements */
+}
+
+/* Style for the Select2 input field */
+body .select2-container--default .select2-search--inline .select2-search__field {
+    flex: 1;
+    /* Expand the input field to fill the available space */
+    box-sizing: border-box;
+    /* Include padding and border in the total width */
+}
+
+/* Optional: Style for the Select2 dropdown arrow */
+body .skills-filter .select2-selection__arrow {
+    top: 50%;
+    /* Center the arrow vertically */
+    transform: translateY(-50%);
+    /* Adjust for vertical centering */
+}
+
+/* Arrange Select2 elements side by side */
+body .skills-filter,
+body .education-filter {
+    width: calc(50% - 5px);
+    /* Adjust width and gap as needed */
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#custom-profile-listing {
+    margin: 20px;
+}
+
+#custom-profile-listing table {
+    border: 2px solid #000;
+    background: #fff;
+}
+
+#custom-profile-listing table thead tr {
+    border-bottom: 2px solid #000;
+}
+
+#custom-profile-listing th,
+#custom-profile-listing td {
+    border: none;
+}
+
+#custom-profile-listing a {
+    text-decoration: none;
+    color: #000;
+}
+
+.sort-arrow {
+    cursor: pointer;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination .current {
+    font-weight: bold;
+}
+
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#ajax-loader {
+    display: none;
+    text-align: center;
+}
+
+#age-range {
+    width: 85%;
+}
+
+#rating-filter {
+    width: 100%;
+}
+
+.job_year_wrapper,
+.age_rating_wrapper {
+    display: flex;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.job_year_wrapper .left_section,
+.age_rating_wrapper .left_section {
+    width: 50%;
+    margin-right: 70px;
+}
+
+.job_year_wrapper .right_section,
+.age_rating_wrapper .right_section {
+    width: 50%;
+}
+.main_wrapper input[type="text"], 
+.main_wrapper input[type="password"], 
+.main_wrapper input[type="email"], 
+.main_wrapper input[type="url"], 
+.main_wrapper input[type="date"], 
+.main_wrapper input[type="number"], 
+.main_wrapper input[type="search"], 
+.main_wrapper input[type="tel"], 
+.main_wrapper textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #fff;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 0.1rem;
+    box-shadow: none;
+    display: block;
+    font-size: 18px;
+    letter-spacing: -0.015em;
+    margin: 0;
+    max-width: 100%;
+    padding: 8px;
+    width: 100%;
+}
+.main_wrapper label {
+    display: block;
+}
+.main_wrapper select {
+    font-size: 1em;
+}
+.main_wrapper #search-button {
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.0333em;
+    line-height: 1.25;
+    opacity: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: opacity 0.15s linear;
+}
+#custom-profile-listing table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    margin: 4rem 0;
+    max-width: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+#custom-profile-listing th, #custom-profile-listing td {
+    line-height: 1.4;
+    margin: 0;
+    overflow: visible;
+    padding: 0.5em;
+    text-align: left;
+}
+.main_wrapper h4{
+    text-align: center;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+}

@@ -1,0 +1,8 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.meta-box-sortables #profile_meta_box input{
+	width: 100%;
+	margin-bottom:10px;
+}
